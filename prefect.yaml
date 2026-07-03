@@ -30,6 +30,9 @@ deployments:
   tags: []
   concurrency_limit: null
   description: null
+  enforce_parameter_schema: true
+  retries: 3
+  retry_delay_seconds: 60
   entrypoint: src/pipeline/flow_for_runtime_value.py:my_flow
   parameters: {x: 1}
   work_pool:
